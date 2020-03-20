@@ -1,0 +1,40 @@
+{
+  "name": "release-test",
+  "version": "1.0.0",
+  "description": "Release Test",
+  "license": "Proprietary",
+  "main": "src/bnsf-react-framework/ruleBuilder.js",
+  "author": "anupkumar.subramanian@bnsf.com",
+  "private": false,
+  "scripts": {
+    "test": "echo skip",
+    "test:run": "echo skip",
+    "test:xml": "echo skip",
+    "test:html": "echo skip"
+  },
+  "betterScripts": {
+    "test": {
+      "command": "mocha --opts mocha.opts \"src/*.test.*\" \"src/**/*.test.*\"",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    },
+    "test:xml": {
+      "command": "mocha --opts mocha.opts --reporter mocha-junit-reporter --reporter-options mochaFile=./build/reports/javascript/test/test.xml \"src/**/*.test.*\"",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    },
+    "test:html": {
+      "command": "mocha --opts mocha.opts --reporter mocha-gel-html-reporter --reporter-options mochaFile=./build/reports/javascript/test/test.html \"src/**/*.test.*\"",
+      "env": {
+        "NODE_ENV": "test"
+      }
+    }
+  },
+  "dependencies": {
+    "better-npm-run": "^0.0.8",
+    "npm-run-all": "^2.3.0",
+    "chai": "^4.0.2",
+    "mocha": "^3.5.0"
+  }}

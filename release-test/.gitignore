@@ -1,0 +1,8 @@
+.npm-cache
+.nyc-output
+/build
+/lib
+/node_modules
+yarn.lock
+.nyc_output/
+/test-integration

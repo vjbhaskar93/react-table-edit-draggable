@@ -1,0 +1,98 @@
+:global .rthfc .rt-thead.-headerGroups,
+:global .rthfc .rt-thead.-header {
+  z-index: 3;
+}
+
+:global .rthfc .rt-thead.-filters {
+  z-index: 2;
+}
+
+/* :global .rthfc .rt-th,
+:global .rthfc .rt-td {
+  background-color: rgb(255,255,255);
+} */
+
+/* :global .rthfc .rt-td:nth-child(odd) {
+  background-color: rgb(255,255,255);
+} */
+
+/* :global .rthfc .rt-td:nth-child(even) {
+  background-color: rgb(252,252,252);
+} */
+
+:globla .rthfc.-sp .rthfc-th-fixed-left,
+:globla .rthfc.-sp .rthfc-td-fixed-left {
+  background: blue;
+}
+:global .rt-tr -odd .rthfc .rt-td.rthfc-td-fixed-left {
+  background-color: rgb(255, 255, 255);
+}
+
+:global .rt-tr -even .rthfc .rt-td.rthfc-td-fixed-left {
+  background-color: rgb(252, 252, 252);
+}
+
+:global .rthfc .-headerGroups .rt-th {
+  background-color: #f7f7f7;
+}
+
+:global .rthfc.-striped .rt-tr.-odd .rt-td {
+  background-color: #fcfcfc;
+}
+
+:global .rthfc.-highlight .rt-tr:hover .rthfc-th-fixed-left {
+  background-color: #f2f2f2;
+}
+
+/* :global .rthfc .-filters .rt-th.rthfc-th-fixed-left-last,
+:global .rthfc .rt-th.rthfc-th-fixed-left-last,
+:global .rthfc .rt-td.rthfc-td-fixed-left-last {
+  border-right: solid 1px #ccc;
+}
+
+:global .rthfc .rt-th.rthfc-th-fixed-right-first,
+:global .rthfc .rt-td.rthfc-td-fixed-right-first {
+  border-left: solid 1px #ccc; 
+} */
+
+/*------------ Sticky position version: -sp ------------*/
+
+:global .rthfc.-sp .rt-tbody {
+  overflow: visible;
+  flex: 1 0 auto;
+}
+
+:global .rthfc.-sp .rt-thead {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+:global .rthfc.-sp .rt-thead.-headerGroups {
+  border-bottom-color: #f2f2f2;
+}
+
+:global .rthfc.-sp .rt-tfoot {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  bottom: 0px;
+}
+
+:global .rthfc.-sp .rthfc-th-fixed,
+:global .rthfc.-sp .rthfc-td-fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  background: #fff;
+}
+
+:global .rthfc.-sp .rthfc-th-fixed-left,
+:global .rthfc.-sp .rthfc-td-fixed-left {
+  left: 0;
+}
+
+:global .rthfc.-sp .rthfc-th-fixed-right,
+:global .rthfc.-sp .rthfc-td-fixed-right {
+  left: 0;
+}
+
